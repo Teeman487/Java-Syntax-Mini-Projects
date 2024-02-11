@@ -1,0 +1,140 @@
+High level language(for humans) - source code - print("Hi mom") - .java file extension
+
+                                       |   compile = transform source code to machine code
+
+low level language(for computers) - object code (machine code) - 00000001 00010 - Computer only understands binary code
+********************************************
+
+High level language(for humans) - source code - print("Hi mom") - .java file extension
+
+                                       |   compiler = translate as part of the compilation process
+                                      byte code  - cross platform (portable) - .class file extension
+                                       |    J.V.M  = translates as part of the run process
+
+low level language(for computers) - object code (machine code) - 00000001 00010 - Computer only understands binary code
+*************************************************
+JDK - (Java Development Kit) - developers tools  -You are only allowed to download JDK, and other components below will be included
+      JRE - (Java Runtime Env.) - libraries & toolkits
+            JVM -(Java Virtual Machine) - runs jav programs
+***************************************************
+IDE - Integrated Development Environment (Software that helps us write software, check for errors, compile and run code)
+************************************************
+Variable is a placeholder for a value that behaves as the value it contains
+******************************************
+\t-escape - sequence-push to middle
+**********************
+\n -it pushes or escape to the next line of console
+*********************************
+String = a reference data type that can store one or more characters
+         reference data that types have access to useful methods
+***********************************
+if statement = A basic form of decision making or performs a block of code if its condition evaluates to be true
+switch = statement that allows a variable to be tested for equality against a list of values
+while loop = executes a block of code(unlimitedly) as long as its condition remains true
+              escape and move on to the next printOut statement as long as its condition remains false
+
+doWhileLoop = variation of while loop, you move the while() to the end of  block of code & precede with do{
+              We always perform our block of code at least once, and then we check the condition after
+              Which means, we perform our block of code once even if the condition remains false
+
+int x = random.nextInt(6); // Generate rd btwn 0 & 5
+int x = random.nextInt(6) + 1;  // Generate rd btwn 1 & 6
+
+for loop = executes a block of code a limited amount of times
+
+nested loops = a loop inside a loop
+
+array = used to store multiple values in a single variable
+--ArrayList use.size
+************************
+2D array = an array of arrays
+***************************************
+ArrayList = a resizable array
+Elements can be added and removed after compilation phase
+store reference data types
+--Array use .length
+************************
+2D ArrayList = a dynamic list of lists
+You can change the size of these lists during runtime
+******************************
+for-each = traversing technique to iterate through the elements in an array/collection
+           less steps, more readable
+            less flexible
+*******************************************
+wrapper class = provides a way to use primitive data types as reference data types
+                  reference data types contain useful methods
+                 can be used with collections (ex.ArrayList)
+
+    primitive       wrapper
+
+     boolean        Boolean
+     char           Character
+     int            Integer
+     double         Double
+
+    autoboxing = the automatic conversion that the java compiler makes between the primitive types and their corresponding object wrapper classes.
+     unboxing = the reverse of autoboxing. Automatic conversion of wrapper class to primitive
+*******************************************************
+static  = modifier. A single copy of a variable/method is created and shared.
+            The class "owns" the static member
+**************************************************
+method = a block of code that is executed whenever it is called upon
+**************************
+overloaded methods = methods that share the same name but have different parameters
+                    method name + parameters = method signature
+***********************************************
+object = an instance of a class that may contain attributes and methods
+ ex     = (phone, desk, computer, coffee cup)
+constructor = special method that is called when an object is instantiated (created)
+*********************************************************
+printf() = an optional method to control, format, and display text to the console window
+            two arguments = format string + (object/variable/value)
+            % [flags] [precision] [width] [conversion-character]
+
+// [conversion-character]
+//        System.out.printf("%d This is a format string",123); // 123 This is a format string
+//        System.out.printf("%b correct",myBoolean); // true correct
+//        System.out.printf("%c",myChar); // @
+//       System.out.printf("%s string..",myString); // Toheeb string..
+//        System.out.printf("%d integer...",myInt);  // 50 integer...
+//          System.out.printf("%f double...",myDouble);  // 1000.000000 double...
+
+// [width]
+// minimum number of characters to be written as output
+// System.out.printf("Hello %10s",myString);
+
+// [precision]
+// sets number of digits of precision when outputting floating-point values
+System.out.printf("You have this much money %+20f",myDouble);
+
+// [flags]
+//  adds an effect to output based on the flag added to format specifier
+// - : left-justify
+// + : output a plus (+) or minus (-) sign for a numeric value
+// 0 : numeric values are zero-padded
+// , : comma grouping separator if numbers > 1000
+
+
+FileReader = reads the contents of a file as a stream of characters. One by one
+                  read() returns as int value which contains the byte value
+                when read() returns -1, there is no more data to be read
+
+                //local = declared inside a method, visible only to that method
+
+                // global = declared outside a method, but within a class visible to all parts of class
+
+                // overloaded constructor = multiple constructors within a class with the same name,
+                 //                           but have different parameters
+                //                            name + parameters = signature
+
+                // toString() = special method that all objects inherit;
+                //              that returns a string that "textually reprsents" an object.
+                //                can be used both implicitly and explicitly.
+
+                // file = An abstract representation of file and directory pathnames
+ *******************************************
+JFrame = a GUI window to add components to
+JLabel = a GUI display area for a string of text, an image or both
+// Jpanel = a GUI component that functions as a container to hold other components
+
+
